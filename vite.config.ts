@@ -5,7 +5,7 @@ import {VitePWA} from 'vite-plugin-pwa'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: '/$SHORT_NAME',
+    base: '/',
     test: {
         environment: "jsdom",
     },
@@ -15,7 +15,7 @@ export default defineConfig({
             registerType: 'autoUpdate',
             manifest: {
                 name: "$NAME",
-                short_name: '$SHORT_NAME',
+                short_name: '$NAME',
                 description: "$NAME",
                 theme_color: "#FFFFE0",
                 icons: [{
